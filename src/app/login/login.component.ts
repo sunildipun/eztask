@@ -13,7 +13,7 @@ import {
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  logo = 'https://lh3.googleusercontent.com/4X34n3Es5UP28VEMw-qRUgNvyh8rzgUHGWEcHBnLRm-bqVbpupcqh7X0WhnMpo7FyWoiKg=s85';
   myform: FormGroup;
 
   constructor(
