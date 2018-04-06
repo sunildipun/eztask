@@ -1,0 +1,137 @@
+* {
+    font-size: 18px;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.leftDiv{
+    width: 60%;
+    height: 100vh;
+    background-color: #d7d7d7;
+    background-image: url(../../image/_Group_.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+}
+
+.rightDiv{
+    width: 40%;
+    height: 100vh;
+    background-image: url(../../image/_Path_.png);
+    float: left;
+    border: 1px solid black;
+}
+
+.captionBox{
+    width: 70%;
+    height: 55%;
+    top: 25%;
+    left: 15%;
+    position: relative;
+    background-color: rgba(143, 143, 143, 0.5);
+    border-radius: 15px;
+}
+
+.caption{
+    font-size: 3em;
+    color: #fefefe;
+    margin-left: 5%;
+}
+
+.caption1{
+    font-size: 2em;
+    color: #fefefe;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.buttonMain{
+    width: 100%;
+    height: 10vh;
+}
+
+.button{
+    width: 6%;
+    text-align: center;
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    border: 1px solid #0099cc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.loginMain{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.login{
+    color: #ff9a37;
+}
+
+.loginIn1{
+    font-size: 2.35em;
+}
+
+.loginIn2{
+    font-size: 1.5em;
+}
+
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #0099cc 1px;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+}
+
+.button-1{
+    width: 100%;
+}
+.button-1-1{
+    width: 40%;
+    float: left;
+    margin-right: 35%;
+    text-align: center;
+    background-color: #0099cc;
+    border: 1px solid #0099cc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.button-1-2{
+    width: 40%;
+    text-align: center;
+    float: left;
+    background-color: #0099cc;
+    border: 1px solid #0099cc;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+::placeholder {
+    color: #0099cc;
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #0099cc;
+   text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #0099cc;
+   text-align: center;
+}
