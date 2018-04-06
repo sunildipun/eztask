@@ -8,15 +8,37 @@ import { Router } from '@angular/router';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
-
+  name: string;
+  email: string;
+  code: string;
+  number: number;
+  password: string;
+  cpwd: string;
 
   constructor(
     private r: Router,
-    // this.cities1 = []
+    //  this.cities1 = []
   ) { }
+
 
   ngOnInit() {
 
+  }
+  onSubmit(e) {
+    e.preventDefault();
+    console.log(e);
+    console.log('Form has been submitted');
+    let name = e.target.elements[0].value;
+    let email = e.target.elements[1].value;
+    let code = e.target.elements[2].value;
+    let mobile = e.target.elements[3].value;
+    let pwd = e.target.elements[4].value;
+    let cpwd = e.target.elements[4].value;
+    if (pwd === 'admin' && cpwd === 'admin') {
+      this.r.navigate(['/dashboard']);
+    } else {
+      alert('Cant Login');
+    }
   }
 
 

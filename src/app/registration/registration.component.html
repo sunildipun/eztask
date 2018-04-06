@@ -10,38 +10,38 @@
             <a class="button" [routerLink]="['/']">Sign in</a>
         </div>
         <div class="loginMain">
-            <img src="././image/logo.png" width="50%">
+            <img src="../../image/logo.png" width="50%">
             <br>
             <div class="login">
                 <h3 class="loginIn1">Welcome to ezTask</h3>
                 <p class="loginIn2">Collaboration at your fingertips</p>
             </div>
-            <form>
-                <div>
-                    <input type="text" placeholder="Name" class="text-line">
+            <form (ngSubmit)="onSubmit($event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" class="text-line" >
                 </div>
-                <div>
-                    <input type="text" placeholder="Email id" class="text-line">
+                <div class="form-group">
+                    <input type="text" placeholder="Email id" class="text-line" >
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" size="5" placeholder="Country-Code" class="text-line">
-                    <input type="text" size="8" placeholder="Mobile No." class="text-line">
+                    <input type="text" size="8" placeholder="Mobile No." class="text-line" >
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" placeholder="Password" class="text-line">
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" placeholder="Confirm Password" class="text-line">
                 </div>
+                <div class="button-1"> 
+                    <div >
+                        <input type="submit" class="button-1-1" value="LOGIN">
+                    </div>
+                    <div class="button-1-2">
+                        <a [routerLink]="['/']">CANCEL</a>
+                    </div>
+                </div>
             </form>
-            <div class="button-1"> 
-                <div class="button-1-1">
-                    <a>LOGIN</a>
-                </div>
-                <div class="button-1-2">
-                    <a [routerLink]="['/']">CANCEL</a>
-                </div>
-            </div>
         </div>
     </div>
 
