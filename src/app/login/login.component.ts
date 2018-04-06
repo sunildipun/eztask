@@ -6,6 +6,7 @@ import {
   FacebookLoginProvider,
   GoogleLoginProvider
 } from 'angular5-social-login';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private socialAuthService: AuthService,
     private r: Router,
+    private user: UserService,
   ) { }
 
   ngOnInit() {
@@ -42,6 +44,7 @@ export class LoginComponent implements OnInit {
       (userData) => {
         console.log(socialPlatform + ' sign in data : ' , userData);
         // Now sign-in with userData
+        this.r.navigate(['/dashboard']);
       }
     );
   }
@@ -51,6 +54,7 @@ export class LoginComponent implements OnInit {
     let username = e.target.elements[0].value;
     let password = e.target.elements[1].value;
     if (username === 'admin' && password === 'admin') {
+      this.user.setUserLoggedIn();
       this.r.navigate(['/dashboard']);
     }
 

@@ -8,6 +8,8 @@ import {
   GoogleLoginProvider,
   FacebookLoginProvider,
 } from 'angular5-social-login';
+import { UserService } from './user.service';
+import { AuthguardGuard } from './authguard.guard';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -50,7 +52,9 @@ export function getAuthServiceConfigs() {
     {
       provide: AuthServiceConfig,
       useFactory: getAuthServiceConfigs
-    }
+    },
+    UserService,
+    AuthguardGuard,
   ],
   bootstrap: [AppComponent]
 })
