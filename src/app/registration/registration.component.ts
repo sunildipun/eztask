@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import {DropdownModule} from 'primeng/dropdown';
+
 
 @Component({
   selector: 'app-registration',
@@ -17,8 +17,16 @@ export class RegistrationComponent implements OnInit {
   logo = 'https://lh3.googleusercontent.com/4X34n3Es5UP28VEMw-qRUgNvyh8rzgUHGWEcHBnLRm-bqVbpupcqh7X0WhnMpo7FyWoiKg=s85';
   constructor(
     private r: Router,
-    //  this.cities1 = []
-  ) { }
+    // cities1 =
+    // [
+    //   {label: 'Select City', value: null},
+    //   {label: 'New York', value: {id: 1, name: 'New York', code: 'NY'}},
+    //   {label: 'Rome', value: {id: 2, name: 'Rome', code: 'RM'}},
+    //   {label: 'London', value: {id: 3, name: 'London', code: 'LDN'}},
+    //   {label: 'Istanbul', value: {id: 4, name: 'Istanbul', code: 'IST'}},
+    //   {label: 'Paris', value: {id: 5, name: 'Paris', code: 'PRS'}}
+    // ],
+    ) { }
 
 
   ngOnInit() {

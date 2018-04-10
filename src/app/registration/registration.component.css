@@ -10,18 +10,18 @@
 .leftDiv{
     width: 60%;
     height: 100vh;
-    background-color: #d7d7d7;
-    background-image: url(../../image/_Group_.png);
-    background-position: left;
+    background-color: #d1e3ed;
+    background-image: url(../../assets/eztask/_Group_.png);
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 75%;
     float: left;
 }
 
 .rightDiv{
     width: 40%;
     height: 100vh;
-    background-image: url(../../image/_Path_.png);
+    background-image: url(../../assets/eztask/form_background.png);
     float: left;
     border: 1px solid black;
 }
@@ -29,23 +29,22 @@
 .captionBox{
     width: 70%;
     height: 55%;
-    top: 25%;
+    top: 15%;
     left: 15%;
     position: relative;
-    background-color: rgba(143, 143, 143, 0.8);
+    background-color: rgba(111, 192, 221, 0.8);
     border-radius: 15px;
 }
 
 .caption{
-    font-size: 3em;
+    font-size: 4em;
     color: #fefefe;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 .caption1{
     font-size: 2em;
     color: #fefefe;
-    /* margin-top: 5%; */
     margin-left: 5%;
 }
 
@@ -62,6 +61,16 @@
     right: 1%;
     border: 1px solid #0099cc;
     border-radius: 15px 15px 15px 15px;
+}
+
+.image{
+    height: 30%;
+    width: 100%;
+}
+
+.image-1{
+    position: relative;
+    left: 35%;
 }
 
 .loginMain{
@@ -84,7 +93,7 @@
     font-size: 1.5em;
 }
 
-.text-line {
+.form-control {
     background-color: transparent;
     color: #000000;
     outline: none;
@@ -95,6 +104,7 @@
     border-bottom: solid #0099cc 1px;
     padding: 3px 10px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .button-1{

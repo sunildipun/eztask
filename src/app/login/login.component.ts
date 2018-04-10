@@ -51,8 +51,10 @@ export class LoginComponent implements OnInit {
 
   loginUser(e) {
     console.log('Login CLicked');
-    let username = e.target.elements[0].value;
-    let password = e.target.elements[1].value;
+    const username = e.target.elements[0].value;
+    const password = e.target.elements[1].value;
+    // const username = this.model.username;
+    // const password = this.model.password;
     if (username === 'admin' && password === 'admin') {
       this.user.setUserLoggedIn();
       this.r.navigate(['/dashboard']);

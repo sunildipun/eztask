@@ -10,48 +10,42 @@
 .leftDiv{
     width: 60%;
     height: 100vh;
-    background-color: #d7d7d7;
-    background-image: url(../../image/_Group_.png);
-    background-position: left;
+    background-color: #d1e3ed;
+    background-image: url(../../assets/eztask/background_hero.png);
+    background-position: 90% 75%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 65%;
     float: left;
 }
 
 .rightDiv{
     width: 40%;
     height: 100vh;
-    background-image: url(../../image/_Path_.png);
+    background-image: url(../../assets/eztask/form_background.png);
     float: left;
     border: 1px solid black;
-}
-
-.captionBox{
-    width: 70%;
-    height: 55%;
-    top: 25%;
-    left: 15%;
-    position: relative;
-    background-color: rgba(143, 143, 143, 0.8);
-    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 98% 100%;
 }
 
 .caption{
-    font-size: 3em;
+    width: 50%;
     color: #fefefe;
-    margin-left: 5%;
 }
 
-.caption1{
-    font-size: 2em;
-    color: #fefefe;
-    margin-top: 5%;
+
+.caption-1{
+    font-size: 2.5em;
+    color: #0070bc;
+    font-weight: bold;
+    text-shadow: 0 0.5px 3px #000000;
     margin-left: 5%;
 }
 
 .buttonMain{
     width: 100%;
     height: 10vh;
+    margin-left: 7%;
 }
 
 .button{
@@ -70,6 +64,16 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+}
+
+.image{
+    height: 30%;
+    width: 100%;
+}
+
+.image-1{
+    position: relative;
+    left: 35%;
 }
 
 .login{
@@ -95,11 +99,7 @@
     border-bottom: solid #0099cc 1px;
     padding: 6px 10px;
     margin-bottom: 20px;
-}
-
-.buttonMain{
-    margin-top: 10%;
-    margin-left: 7%;
+    text-align: center;
 }
 
 .button-1{
@@ -119,15 +119,16 @@
     margin-top: 5%;
 }
 
+
 .button-1-1{
     width: 15%;
     float: left;
     margin-left: 11%;
     position: absolute;
     text-align: center;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF;
     border: 1px solid #0099cc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px; */
 }
 
 

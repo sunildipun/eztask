@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing';
 import { FormsModule } from '@angular/forms';
+import {DropdownModule} from 'primeng/dropdown';
+
+
 import {
   SocialLoginModule,
   AuthServiceConfig,
@@ -40,13 +43,14 @@ export function getAuthServiceConfigs() {
     LoginComponent,
     RegistrationComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SocialLoginModule
+    SocialLoginModule,
+    DropdownModule
   ],
   providers: [
     {

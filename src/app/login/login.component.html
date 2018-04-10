@@ -1,8 +1,7 @@
 <div class="mainContainer">
     <div class="leftDiv">
-        <div class="captionBox">
-            <p class="caption">FIRST TIME AI DRIVEN PERSONAL ASSISTANT</p>
-            <p class="caption1">FOR TASK MANAGEMENT</p>
+        <div class="caption">
+            <p class="caption-1">COLLABORATION AT YOUR FINGERTIP</p>
         </div>
     </div>
     <div class="rightDiv">
@@ -10,18 +9,19 @@
             <a class="button" (click)="goRegistration()">Sign Up</a>
         </div>
         <div class="loginMain">
-            <img src="{{logo}}" width="15%">
-            <br>
+            <div class="image">
+                <img class="image-1" src="{{logo}}" width="30%">
+            </div>
             <div class="login">
                 <h3 class="loginIn1">Welcome to ezTask</h3>
                 <p class="loginIn2">Collaboration at your fingertips</p>
             </div>
             <form (submit)="loginUser($event)">
                 <div class="form-group">
-                    <input type="text" placeholder="Username" class="form-control">
+                    <input type="text" placeholder="Username" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Password" class="form-control">
+                    <input type="text" placeholder="Password" class="form-control"/>
                 </div>
                 <div class="buttonMain">
                     <input class="button-1" type="submit" value="LOGIN"><br>
@@ -30,7 +30,8 @@
             </form>
             <div class="button-1-0"> 
                 <div class="button-1-1">
-                    <a (click)="socialSignIn('google')">Google</a>
+                    <img (click)="socialSignIn('google')" src="https://png.icons8.com/color/50/000000/google-logo.png">
+                    <a style="font-size:1.2em" (click)="socialSignIn('google')">Google</a>
                 </div>
             </div>
         </div>
